@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".view.KayitActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="178dp"
+        android:background="@drawable/button"
+        android:onClick="kayitOl2"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/emailText2"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="E-mail Adresinizi Giriniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/passwordText2"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordText2" />
+
+    <EditText
+        android:id="@+id/passwordText2"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:hint="Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="320dp"
+        android:fontFamily="@font/bold"
+        android:text="KAYIT OL"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
+</androidx.constraintlayout.widget.ConstraintLayout>
